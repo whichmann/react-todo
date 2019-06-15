@@ -1,2 +1,1 @@
-# react-todo
-simple to-do app
+A simple to-do app built in React
