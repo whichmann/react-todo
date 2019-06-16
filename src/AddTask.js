@@ -15,16 +15,30 @@ class AddTask extends Component {
     e.preventDefault();
     this.props.addTask(this.state);
     this.setState({
-        content: ""
-    })
+      content: ""
+    });
   };
 
   render() {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Add new task:</label>
-          <input type="text" onChange={this.handleChange} value={this.state.content} placeholder="Please input your task here"/>
+          <div className="input-field">
+            <input
+              type="text"
+              onChange={this.handleChange}
+              value={this.state.content}
+            />
+            <label>Task to add</label>
+          </div>
+
+          <a
+            onClick={this.handleSubmit}
+            href="#"
+            className="waves-effect waves-light blue btn"
+          >
+            <i className="material-icons left">add</i>add
+          </a>
         </form>
       </div>
     );
