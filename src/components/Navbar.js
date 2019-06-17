@@ -16,6 +16,9 @@ const Navbar = () => {
           <li>
             <Link to="/about">About</Link>
           </li>
+          {/* <li>
+            <Link to="/Caller">Call for randomness</Link>
+          </li> */}
         </ul>
       </div>
     </nav>
