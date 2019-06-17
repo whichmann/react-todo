@@ -24,10 +24,10 @@ class Caller extends Component {
         );
       })
     ) : (
-      <div className="center">No posts yet :(</div>
+      <div className="center">No posts yet :|</div>
     );
 
-    return <div className="container"><div className="center blue-text">You've discovered a secret page for my own axion reference!</div><p>{postList}</p></div>;
+    return <div className="container"><p className="center blue-text">You've discovered a secret page for my own axion reference!</p>{postList}</div>;
   }
 }
 
