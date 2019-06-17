@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Caller from "./components/Caller";
 import Footer from "./components/Footer";
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
             <Navbar />
             <Route exact path="/About" component={About} />
             <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/Caller" component={Caller} />
             <div className="container">
               <h1>
                 At the end of the day... can you say you're proud of yourself?
