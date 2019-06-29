@@ -32,13 +32,12 @@ class AddTask extends Component {
             <label>Task to add</label>
           </div>
 
-          <a
+          <button
             onClick={this.handleSubmit}
-            href="#"
             className="waves-effect waves-light blue btn"
           >
             <i className="material-icons left">add</i>add
-          </a>
+          </button>
         </form>
       </div>
     );
