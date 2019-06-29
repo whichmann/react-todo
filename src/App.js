@@ -6,7 +6,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Caller from "./components/Caller";
-import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -36,22 +35,19 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <main>
-          <div className="todo-App">
-            <Navbar />
-            <Route exact path="/About" component={About} />
-            <Route exact path="/Contact" component={Contact} />
-            <Route exact path="/Caller" component={Caller} />
-            <div className="container">
-              <h1>
-                At the end of the day... can you say you're proud of yourself?
-              </h1>
-              <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
-              <AddTask addTask={this.addTask} />
-            </div>
+        <div className="todo-App">
+          <Navbar />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/Caller" component={Caller} />
+          <div className="container">
+            <h1>
+              At the end of the day... can you say you're proud of yourself?
+            </h1>
+            <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} key={this.state.todos.id}/>
+            <AddTask addTask={this.addTask} />
           </div>
-        </main>
-
+        </div>
       </BrowserRouter>
     );
   }
