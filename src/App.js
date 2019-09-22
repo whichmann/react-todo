@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Caller from "./components/Caller";
 
 function App() {
-  const [todos, setTodos] = useState([{ id: 0, content: "buy batteries" }]);
+  const [todos, setTodos] = useState([{ id: 0, content: "buy milk" }]);
 
   const deleteTodo = todoId => {
     setTodos(todos.filter(todo => {
