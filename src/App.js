@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Todos from "./todos";
-import AddTask from "./AddTask";
+import Todos from "./components/todos";
+import AddTask from "./components/AddTask";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route } from "react-router-dom";
 import About from "./components/About";
