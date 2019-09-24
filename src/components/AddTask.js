@@ -25,7 +25,7 @@ function AddTask ({addTask}) {
 
         <button
           onClick={handleSubmit}
-          className="waves-effect waves-light blue btn"
+          className="waves-effect waves-light red btn"
         >
           <i className="material-icons left">add</i>add
         </button>
